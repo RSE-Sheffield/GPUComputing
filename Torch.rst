@@ -24,6 +24,7 @@ Install CMake, this is needed to build the Torch binaries ::
 	conda install cmake
 
 Download Torch distro from github and run the install script ::
+
 	git clone https://github.com/torch/distro.git ~/torch --recursive
 	cd ~/torch
 	./install.sh

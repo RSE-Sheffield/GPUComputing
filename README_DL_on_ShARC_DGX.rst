@@ -41,7 +41,7 @@ The ``qrshx`` command will request a node that supports graphical applications a
 Requesting a DGX-1 node
 -----------------------
 
-To request an interactive DGX-1 node, type: ::
+To request an interactive DGX-1 node, type ::
 	qrshx -l gpu=1 -P rse -q rse.q
 	
 This will put you in a special RSE queue that has the DGX-1.
@@ -56,7 +56,7 @@ Jobs can be submitted just like the Iceberg system. First create a job script li
 
 	echo "Hello world"
 	
-Then run your script with the ``qsub`` command: ::
+Then run your script with the ``qsub`` command ::
 	qsub your_job_script.sh
 
 You can use ``qstat`` command to check the status of your current job.
