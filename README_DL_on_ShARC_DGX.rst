@@ -33,7 +33,8 @@ ShARC is located at ``sharc.shef.ac.uk`` so to SSH from a linux system: ::
 Requesting a GPU node (K80)
 ---------------------------
 
-To request an interactive node with K80 GPUs type: ::
+To request an interactive node with K80 GPUs, type ::
+
 	qrshx -l gpu=1
 
 The ``qrshx`` command will request a node that supports graphical applications and the ``-l gpu=1`` option ensures that you get a node with a GPU. For memory intensive applications you may want to request for more memory by adding something like ``-l rmem=10G`` which asks for 10GB of RAM.
@@ -42,6 +43,7 @@ Requesting a DGX-1 node
 -----------------------
 
 To request an interactive DGX-1 node, type ::
+
 	qrshx -l gpu=1 -P rse -q rse.q
 	
 This will put you in a special RSE queue that has the DGX-1.
@@ -57,9 +59,10 @@ Jobs can be submitted just like the Iceberg system. First create a job script li
 	echo "Hello world"
 	
 Then run your script with the ``qsub`` command ::
+
 	qsub your_job_script.sh
 
-You can use ``qstat`` command to check the status of your current job.
+You can use ``qstat`` command to check the status of your current job. An output file is created in your home directory that captures your script's outputs.
 
 
 Using DL packages on ShARC
