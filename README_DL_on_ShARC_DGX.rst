@@ -58,7 +58,9 @@ Jobs can be submitted just like the Iceberg system. First create a job script li
 
 	echo "Hello world"
 	
-Then run your script with the ``qsub`` command ::
+In the second line of the script ``#$ -l gpu=1`` you can add more options such as memory request ``-l rmem=10G`` or to be put on the DGX-1 queue ``-P rse -q rse.q``.
+	
+Run your script with the ``qsub`` command ::
 
 	qsub your_job_script.sh
 
