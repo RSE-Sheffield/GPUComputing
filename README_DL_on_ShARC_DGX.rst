@@ -10,7 +10,7 @@ Tester's guideline
 
 - Software requests and error reports can be made by raising an issue on here.
 
-- Provide benchmarking for your application. We are very interested to know how the much additional performance you’re getting by using the system. Comparisons between running it on the CPU, your own GPU, the K80 nodes and the P100 nodes (DGX-1) with single and multi-gpu setup will be very useful.
+- Provide benchmarking for your application. We are very interested to know how the much additional performance you’re getting by using the system. Comparisons between running it on the CPU, your own GPU, the K80 nodes and the P100 nodes (DGX-1) with single and multi-gpu setup will be very useful. **We will be providing guidelines and assistance on this soon.**
 
 - Help contribute to the documentation process by reporting any mistakes or additional steps needed to get your application running. 
 
