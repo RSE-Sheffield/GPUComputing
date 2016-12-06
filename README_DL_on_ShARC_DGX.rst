@@ -28,7 +28,9 @@ ShARC uses a similar system to Iceberg so commands for submitting jobs (``qsub``
 
 ShARC is located at ``sharc.shef.ac.uk`` so to SSH from a linux system: ::
 
-	ssh [your username]@sharc.shef.ac.uk
+	ssh -X [your username]@sharc.shef.ac.uk
+
+The ``-X`` option allows for X11 forwarding. This may be necessary if you're planning to use GUI applications e.g. Matlab.
 	
 Requesting a GPU node (K80)
 ---------------------------
