@@ -16,12 +16,12 @@ Load the relevant modules for ShARC ::
 	
 Create a conda environment to load relevant modules on your local user account and activate it ::
 
-	conda create -n torch python=3.5 anaconda3-2.5.0 
+	conda create -n torch python=3.5
 	source activate torch
 
 Install CMake, this is needed to build the Torch binaries ::
 	
-	conda install cmake
+	conda install cmake atlas
 
 Download Torch distro from github and run the install script ::
 

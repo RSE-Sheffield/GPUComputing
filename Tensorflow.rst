@@ -17,7 +17,7 @@ Load the relevant modules (our example uses CUDA 8.0 with cuDNN 5.1) ::
 
 Create a conda environment to load relevant modules on your local user account and activate it ::
 
-	conda create -n tensorflow python=3.5 anaconda3-2.5.0 
+	conda create -n tensorflow python=3.5
 	source activate tensorflow
 		
 Then install tensorflow with the following commands ::
@@ -64,7 +64,7 @@ If you would like to run TensorFlow on multiple GPUs, you can construct your mod
 	# Creates a session with log_device_placement set to True.
 	sess = tf.Session(config=tf.ConfigProto(log_device_placement=True))
 	# Runs the op.
-	print sess.run(sum)
+	print(sess.run(sum))
 
 You will see something similar to the output below ::
 
