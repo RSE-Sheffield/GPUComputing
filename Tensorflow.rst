@@ -9,7 +9,7 @@ Request an interactive session e.g. ::
 
 	qrshx -l gpu=1 
 
-Load the relevant modules (our example uses CUDA 8.0 with cuDNN 5.1 but :ref:`other versions are available <iceberg_cudnn>`) ::
+Load the relevant modules (our example uses CUDA 8.0 with cuDNN 5.1) ::
 
 	module load apps/python/anaconda3-4.2.0
 	module load libs/cudnn/5.1/binary-cuda-8.0.44
