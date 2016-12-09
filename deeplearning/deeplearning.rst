@@ -10,7 +10,7 @@ Tester's guideline
 
 - Software requests and error reports can be made by raising an issue on here.
 
-- Provide benchmarking for your application. We are very interested to know how the much additional performance you’re getting by using the system. Comparisons between running it on the CPU, your own GPU, the K80 nodes and the P100 nodes (DGX-1) with single and multi-gpu setup will be very useful. **We will be providing guidelines and assistance on this soon.**
+- Provide benchmarking for your application. Please see the **Benchmarking** section below.
 
 - Help contribute to the documentation process by reporting any mistakes or additional steps needed to get your application running. 
 
@@ -77,6 +77,26 @@ Using DL packages on ShARC
 - `Torch <Torch.rst>`_
 - **Caffe** coming soon
 
+Benchmarking
+------------
+We are very interested to know how the much additional performance you’re getting by using the system and would also like to build a repository of self-contained examples that can be used to benchmark the system in the future. We will work with you to create benchmarks as mentioned below.
+
+The benchmarking examples should run in various configurations:
+
+- Single and/or multi-CPU on ShARC nodes.
+- K80 nodes, for single and multi-GPU.
+- DGX-1 (P100) node, single and multi-GPU.
+
+For each benchmarking example there should be:
+
+- Exact copies of the code.
+- Detailed build instructions.
+- Submission scripts.
+- Example data or how we can source the data if needed.
+- Results
+	- System the code is run on and what configuration.
+	- Should be run multiple times to discover variance. 
+- Discussion of the results and an explanation of what's actually being run.
 
 
 

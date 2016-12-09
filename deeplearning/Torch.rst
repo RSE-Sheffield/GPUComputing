@@ -16,7 +16,7 @@ Load the relevant modules for ShARC ::
 
 	module load apps/python/anaconda3-4.2.0
 	module load libs/cudnn/5.1/binary-cuda-8.0.44
-	module load libs/intel-mkl/2017.0/binary
+	module load dev/gcc/4.9.4
 
 	
 Create a conda environment to load relevant modules on your local user account and activate it ::
@@ -29,11 +29,12 @@ Install CMake, this is needed to build the Torch binaries ::
 	
 	conda install cmake atlas
 
-Download Torch distro from github and run the install script ::
+The code below downloads Torch distro from github to the home directory and runs the install script ::
 
 	git clone https://github.com/torch/distro.git ~/torch --recursive
 	cd ~/torch
 	./install.sh
+
 
 
 Every session afterwards
@@ -47,5 +48,5 @@ Load the relevant modules and activate your conda environment ::
 
 	module load apps/python/anaconda3-4.2.0
 	module load libs/cudnn/5.1/binary-cuda-8.0.44
-	module load libs/intel-mkl/2017.0/binary
+	module load dev/gcc/4.9.4
 	source activate torch
