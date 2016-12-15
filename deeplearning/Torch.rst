@@ -10,13 +10,17 @@ Initial setup
 
 Request an interactive session e.g. ::
 
-	qrshx -l gpu=1 
+	qrshx -l gpu=1 -l rmem=16G -l mem=16G
+
+Or to get the DGX-1 e.g. ::
+	
+	qrshx -l gpu=1 -l rmem=16G -l mem=16G -P rse -q rse.q 
 	
 Load the relevant modules for ShARC ::
 
 	module load apps/python/anaconda3-4.2.0
 	module load libs/cudnn/5.1/binary-cuda-8.0.44
-	module load dev/gcc/4.9.4
+	module load libs/torch/7/binary-TEST
 
 	
 Create a conda environment to load relevant modules on your local user account and activate it ::
@@ -25,28 +29,17 @@ Create a conda environment to load relevant modules on your local user account a
 	source activate torch
 
 
-Install CMake, this is needed to build the Torch binaries ::
+Install atlas library for your with Torch ::
 	
-	conda install cmake atlas
-
-The code below downloads Torch distro from github to the home directory and runs the install script ::
-
-	git clone https://github.com/torch/distro.git ~/torch --recursive
-	cd ~/torch
-	./install.sh
-
+	conda install -c anaconda atlas=3.8.4
 
 
 Every session afterwards
 ------------------------
 
-Request an interactive session e.g. ::
-
-	qrshx -l gpu=1 
-	
-Load the relevant modules and activate your conda environment ::
+After requesting an interactive session, load the relevant modules and activate your conda environment ::
 
 	module load apps/python/anaconda3-4.2.0
 	module load libs/cudnn/5.1/binary-cuda-8.0.44
-	module load dev/gcc/4.9.4
+	module load libs/torch/7/binary-TEST
 	source activate torch

@@ -75,7 +75,7 @@ Using DL packages on ShARC
 - `Tensorflow <Tensorflow.rst>`_
 - `Theano <Theano.rst>`_
 - `Torch <Torch.rst>`_
-- **Caffe** coming soon
+- `Caffe <Caffe.rst>`_
 
 Benchmarking
 ------------
