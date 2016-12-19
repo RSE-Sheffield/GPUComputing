@@ -16,12 +16,10 @@ Or to get the DGX-1 e.g. ::
 	
 	qrshx -l gpu=1 -l rmem=16G -l mem=16G -P rse -q rse.q 
 	
-Load the relevant modules for ShARC ::
+Load the Caffe module which also loads anaconda 3.4, CUDA 8.0, cuDNN 5.1 and GCC 4.9.4. ::
 
-	module load apps/python/anaconda3-4.2.0
-	module load libs/cudnn/5.1/binary-cuda-8.0.44
-	module load libs/caffe/r3/binary-TEST
-	module load dev/gcc/4.9.4
+	module load libs/caffe/r3/gcc-4.9.4-cuda-8.0-cudnn-5.1-conda-3.4-TESTING-0.1
+
 
 Create a conda environment to load relevant modules on your local user account and activate it ::
 
@@ -46,10 +44,7 @@ Every session afterwards
 
 After requesting an interactive session, load the relevant modules and activate your conda environment ::
 
-	module load apps/python/anaconda3-4.2.0
-	module load libs/cudnn/5.1/binary-cuda-8.0.44
-	module load libs/caffe/r3/binary-TEST
-	module load dev/gcc/4.9.4
+	module load libs/caffe/r3/gcc-4.9.4-cuda-8.0-cudnn-5.1-conda-3.4-TESTING-0.1
 	source activate caffe
 	export LD_LIBRARY_PATH="/home/<your_username>/.conda/envs/caffe/lib:$LD_LIBRARY_PATH"
 
