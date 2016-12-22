@@ -98,6 +98,14 @@ For each benchmarking example there should be:
 	- Should be run multiple times to discover variance. 
 - Discussion of the results and an explanation of what's actually being run.
 
+Example benchmarking `reports <http://rse.shef.ac.uk/blog/intel-R-iceberg/>`_
+
+- `How each version of R under test got built. <https://github.com/mikecroucher/HPC_Installers/blob/ea4a9f33b705a8cae01841d9c173278fcb486061/apps/R/3.3.1/sheffield/iceberg/intel_15/install_intel_r_sequential.sh>`_
+- `The R code that was used <https://github.com/mikecroucher/HPC_Examples/blob/35de11e7c47bc278b15a64fb77c5575b074e1a47/languages/R/linear_algebra/linear_algebra_bench.r>`_
+- `Results on Iceberg's Ivy bridge nodes including submission scripts <https://github.com/mikecroucher/HPC_Examples/tree/35de11e7c47bc278b15a64fb77c5575b074e1a47/languages/R/linear_algebra/iceberg_results/intel-ivy>`_
+
+
+
 
 
 
