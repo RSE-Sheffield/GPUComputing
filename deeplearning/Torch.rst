@@ -18,16 +18,13 @@ Or to get the DGX-1 e.g. ::
 	
 Load the Torch module which also loads anaconda 3.4, CUDA 8.0, cuDNN 5.1 and GCC 4.9.4. ::
 
-	module load libs/torch/7/gcc-4.9.4-cuda-8.0-cudnn-5.1-conda-3.4-TESTING-0.1
+	module load libs/torch/nvidia-7/gcc-4.9.4-cuda-8.0-cudnn-5.1-conda-3.4-TESTING
 	
-Create a conda environment to load relevant modules on your local user account and activate it ::
+(Optional if you plan to interace with python) Create a conda environment to load relevant modules on your local user account and activate it ::
 
 	conda create -n torch python=3.5
 	source activate torch
 
-Install atlas library for your with Torch ::
-	
-	conda install -c anaconda atlas=3.8.4
 
 
 Every session afterwards
@@ -35,5 +32,7 @@ Every session afterwards
 
 After requesting an interactive session, load the relevant modules and activate your conda environment ::
 
-	module load libs/torch/7/gcc-4.9.4-cuda-8.0-cudnn-5.1-conda-3.4-TESTING-0.1
-	source activate torch
+	module load libs/torch/nvidia-7/gcc-4.9.4-cuda-8.0-cudnn-5.1-conda-3.4-TESTING
+
+	#Optional
+	source activate torch 
