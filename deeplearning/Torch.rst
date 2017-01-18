@@ -19,6 +19,15 @@ Or to get the DGX-1 e.g. ::
 Load the Torch module which also loads anaconda 3.4, CUDA 8.0, cuDNN 5.1 and GCC 4.9.4. ::
 
 	module load libs/torch/nvidia-7/gcc-4.9.4-cuda-8.0-cudnn-5.1-conda-3.4-TESTING
+
+On the DGX-1, load the NCCL library optimised for the hardware: ::
+
+	moudle libs/nccl/dgx-1/binary-cuda-8.0
+
+On any other node use a generic NCCL build: ::
+
+	moudle load libs/nccl/generic/gcc-4.9.4-cuda-8.0
+
 	
 (Optional if you plan to interace with python) Create a conda environment to load relevant modules on your local user account and activate it ::
 
