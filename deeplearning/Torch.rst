@@ -30,7 +30,7 @@ Load the Torch module which also loads anaconda 3.4, CUDA 8.0, cuDNN 5.1 and GCC
 Every session afterwards
 ------------------------
 
-After requesting an interactive session, load the relevant modules and activate your conda environment ::
+In the interactive session or your batch script, load the relevant modules and (optionally) activate your conda environment ::
 
 	module load libs/torch/nvidia-7/gcc-4.9.4-cuda-8.0-cudnn-5.1-conda-3.4-TESTING
 
