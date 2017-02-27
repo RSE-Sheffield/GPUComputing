@@ -21,7 +21,7 @@ GPU hardware available on ShARC
 Joining the RSE queue
 ---------------------
 
-To use the DGX-1 you must join the computer science RSE group and submit jobs to the RSE queue. To joint this group please email `Twin Karmakharm <t.karmakharm@sheffield.ac.uk>`  or `RSE enquiries <rse@shef.ac.uk>`.
+To use the DGX-1 you must join the computer science RSE group and submit jobs to the RSE queue. To joint this group please email `Twin Karmakharm <t.karmakharm@sheffield.ac.uk>`_  or `RSE enquiries <rse@shef.ac.uk>`_.
 
 
 Logging on to the ShARC system
