@@ -1,16 +1,13 @@
 Deep Learning on ShARC
 ======================
 
-**ShARC (and DGX-1) is currently only available for testing purposes. Please read the guideline below**
+**ShARC (and DGX-1) is currently only available for Computer Science Staff and Students. Please read the guideline below**
 
 Tester's guideline
 ------------------
-
-- The system is currently provided for testing purposes and configurations will change as we perform tests and finalise the details. This can sometimes cause instability in the system. We will try to warn you ahead of any major changes or planned outages. 
-
 - Software requests and error reports can be made by raising an issue on here.
 
-- Provide benchmarking for your application. Please see the **Benchmarking** section below.
+- Evaulation of the hardware requires benchmarks. Please talk to @karmauk to provide benchmarking for your application. Please see the **Benchmarking** section below.
 
 - Help contribute to the documentation process by reporting any mistakes or additional steps needed to get your application running. 
 
@@ -19,6 +16,12 @@ GPU hardware available on ShARC
 
 - Nodes with Nvidia K80s
 - **Nvidia DGX-1** (with 8xP100)
+
+
+Joining the RSE queue
+---------------------
+
+To use the DGX-1 you must join the computer science RSE group and submit jobs to the RSE queue. To joint this group please email Twin Karmakharm <mailto:t.karmakharm@sheffield.ac.uk>`_ or RSE enquiries <mailto:rse@shef.ac.uk>`_.
 
 
 Logging on to the ShARC system
@@ -79,7 +82,7 @@ Using DL packages on ShARC
 
 Benchmarking
 ------------
-We are very interested to know how the much additional performance you’re getting by using the system and would also like to build a repository of self-contained examples that can be used to benchmark the system in the future. We will work with you to create benchmarks as mentioned below.
+We are very interested to know how the much additional performance youâ€™re getting by using the system and would also like to build a repository of self-contained examples that can be used to benchmark the system in the future. We will work with you to create benchmarks as mentioned below.
 
 The benchmarking examples should run in various configurations:
 
